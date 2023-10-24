@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@J ~ Fedded Biolink</title>
+  <script type="text/javascript" src="mtrail.js"></script>
+  <link rel="stylesheet" href="./stylesheet.css">
+<div id="clickanywhere">
+    <h1>click to enter</h1>
+     <script>
+        document.addEventListener("click", function () {
+            var clickAnywhereElement = document.getElementById("clickanywhere");
+            clickAnywhereElement.style.opacity = "0";
+            setTimeout(function () {
+                clickAnywhereElement.style.display = "none";
+            }, 500);
+            document.getElementById("song").play();
+        });
+    </script>
+</div>
+</head>
+<body>
+  <div class="framework">
+    <div class="card" data-tilt>
+      <div class="profile-pic"></div>
+      <audio id="song">
+        <source src="images/audio.mp3">
+      </audio>
+       <script>
+        window.addEventListener('click', () => {
+            document.getElementById("song").play();
+        });
+       </script>
+      <h1 class="full-name">@jqxs</h1>
+
+      <h2 class="profession">Lonely 🖤</h2>
+    
+      <div class="social-media-icons">
+        <a href="https://discord.com/users/1053408027744673883"><img src="./images/discord.png" alt=""></a>
+        <a href="https://instagram.com/@jaiden_.45"><img src="./images/ig.png" alt=""></a>
+        <a href="https://www.tiktok.com/@uw0g"><img src="./images/tiktok.png" alt=""></a
+    </div>
+  </div>
+  <script src="./vanilla-tilt.min.js"></script>
+  <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var sf = new Snowflakes({
+            color: "black"
+        });
+    </script>
+     <script>
+      document.onkeydown = function(e) {
+              if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                  alert('Unlucky Broski');
+              }
+              return false;
+      };
+      </script>
+</body>
+</html>
