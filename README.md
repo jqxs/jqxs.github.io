@@ -1,1 +1,1 @@
-# jqxs.github.io
+# jqxs.lol.io
